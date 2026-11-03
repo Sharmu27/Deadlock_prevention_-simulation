@@ -1,0 +1,11 @@
+phase,strategy,runs,completed,hung,avg_time_s,deadlocks,aborts,waits,rejections
+classic,"No safeguard",1,0,1,0.00,0,0,5,0
+classic,"Detection + Recovery",1,1,0,7.02,1,1,7,0
+classic,"Avoidance (Banker's)",1,1,0,6.16,0,0,5,0
+classic,"Prevention: resource ordering",1,1,0,6.91,0,0,4,2
+classic,"Prevention: no hold-and-wait",1,1,0,3.66,0,0,3,0
+stress,"No safeguard",8,5,3,0.83,0,0,36,0
+stress,"Detection + Recovery",8,8,0,0.94,6,6,47,0
+stress,"Avoidance (Banker's)",8,8,0,0.84,0,0,34,0
+stress,"Prevention: resource ordering",8,8,0,0.84,0,0,34,23
+stress,"Prevention: no hold-and-wait",8,8,0,0.46,0,0,24,0
